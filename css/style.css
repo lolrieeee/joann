@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  color:#4c4c4c;
+  font-weight: 300;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-container {
+  background:#fff;
+  width:100%;
+  padding:30px 0 5px;
+}
+
+.nav-container a {
+  font-size:14px;
+  color:#282828;
+  font-weight:300;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  padding:5px 50px;
+}
+
+.logo a {
+  font-family: 'Pacifico', cursive;
+  font-size:30px;
+  text-decoration: none;
+  color:#524956;
+  border-bottom:3px #524956 dotted;
+}
+
+.main-container {
+  background:#000000;
+  width:100%;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.main-container img {
+  margin:15px 0;
+}
+
+.main-left {
+  padding-right: 0;
+}
+
+.main-right {
+  padding-left:0;
+}
+
+.index-images {
+  position: relative;
+}
+
+.caption {
+  padding:30px;
+  background:rgba(255, 255, 255, 0.7);
+  position: absolute;
+  bottom:0;
+  width:100%;
+  color:#153f7c;
+}
+
+.about-container {
+  background-image:url(../images/bg_2.jpg);
+  background-position: center center;
+  background-size: auto;
+  background-attachment: fixed;
+  padding-top:70px;
+  padding-bottom:70px;
+}
+
+.about-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding:50px;
+}
+
+footer {
+  padding-top:30px;
+}
+
+.social i {
+  color:#aaaaaa;
+  font-size:20px;
+  margin:5px;
+}
