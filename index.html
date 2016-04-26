@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joann</title>
+  <title>JP Macarons</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css" media="screen"charset="utf-8">
 </head>
 <body>
+
+<!-- ================= NEED TO BE INLINE OR IT WILL CAUSE FLICKERING ================= -->
+<script>document.getElementsByClassName('index-images-1').className += ' fade-out';</script>
+<script>document.getElementsByClassName('index-images-2').className += ' fade-out';</script>
+<script>document.getElementsByClassName('index-images-3').className += ' fade-out';</script>
+<script>document.getElementsByClassName('index-images-4').className += ' fade-out';</script>
+<script>document.getElementsByClassName('index-images-5').className += ' fade-out';</script>
+
 <nav class="nav-container text-center">
   <ul>
     <li><a href="#">Menu</a></li>
-    <li><a href="#">Catering</a></li>
-    <span class="logo"><a href="index.html">Joann's Macarons </a></span>
+    <li><a href="catering.html">Catering</a></li>
+    <li class="logo"><span class="logo-bracket-left">{</span><a href="index.html">J.P.<br>Macarons</a><span class="logo-bracket-right">}</span></li>
     <li><a href="about.html">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
@@ -21,8 +29,8 @@
 
 <div class="main-container">
   <div class="col-md-6 main-left">
-    <div class="col-md-12">
-      <a href="#">
+    <div class="col-md-12 index-images index-images-1 fade-out">
+      <a href="#" class="index-images-link">
         <img src="images/bg_1.jpg" alt="" class="img-responsive">
       </a>
       <p class="caption">
@@ -30,39 +38,61 @@
       </p>
     </div>
 
-    <div class="col-md-6">
-      <a href="#">
+    <div class="col-md-6 index-images index-images-2 fade-out">
+      <a href="#" class="index-images-link">
         <img src="images/bg_2.jpg" alt="" class="img-responsive">
       </a>
+      <p class="caption">
+        #JaiLao #Macarons Wonderful table display for macarons. Lots of food to eat. Testing out super long paragraphs.
+      </p>
     </div>
 
-    <div class="col-md-6">
-      <a href="#">
+    <div class="col-md-6 index-images index-images-3 fade-out">
+      <a href="#" class="index-images-link">
         <img src="images/bg_3.jpg" alt="" class="img-responsive">
       </a>
+      <p class="caption">
+        #JaiLao #Macarons Wonderful table display for macarons.
+      </p>
     </div>
   </div>
 
   <div class="col-md-6 main-right">
-    <div class="col-md-8">
-      <a href="#">
+    <h1 class="text-center">Latest Feeds</h1>
+    <div class="col-md-8 index-images index-images-4 fade-out">
+      <a href="#" class="index-images-link">
         <img src="images/bg_2.jpg" alt="" class="img-responsive">
       </a>
+      <p class="caption">
+        #JaiLao #Macarons Wonderful table display for macarons.
+      </p>
     </div>
 
-    <div class="col-md-6">
-      <a href="#">
+    <div class="col-md-6 index-images index-images-5 fade-out">
+      <a href="#" class="index-images-link">
         <img src="images/bg_4.jpg" alt="" class="img-responsive">
       </a>
+      <p class="caption">
+        #JaiLao #Macarons Wonderful table display for macarons.
+      </p>
     </div>
-  </div>
 
+    <div class="col-md-6 index-images index-images-1 fade-out">
+      <a href="#" class="index-images-link">
+        <img src="images/bg_5.jpg" alt="" class="img-responsive">
+      </a>
+      <p class="caption">
+        #JaiLao #Macarons Wonderful table display for macarons.
+      </p>
+    </div>
+
+  </div>
 </div>
 
-<div class="clearfix"></div>
+<div class="main-bg clearfix"></div>
 <footer class="container">
   <div class="col-md-6">
-    <strong>Joann's Macarons</strong><br>
+    <strong>J.P. Macarons</strong><br>
     8PM - 5PM<br>
     559.234.1240
   </div>

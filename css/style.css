@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 
 *{
   font-family: 'Open Sans', sans-serif;
@@ -7,8 +8,55 @@
   font-weight: 300;
 }
 
+p {
+  line-height: 24px;
+  margin-bottom:30px;
+}
+
 a:hover {
   text-decoration: none;
+}
+
+h1 {
+  font-family: 'Droid Serif', serif;
+  font-size:40px;
+}
+
+.grey {
+  color:#aaaaaa;
+}
+
+.index-images-1.fade-out,
+.index-images-2.fade-out,
+.index-images-3.fade-out,
+.index-images-4.fade-out,
+.index-images-5.fade-out {
+  opacity: 0;
+}
+
+.index-images-1 {
+  opacity: 1;
+  transition: .25s all ease-in;
+}
+
+.index-images-2 {
+  opacity: 1;
+  transition: 1s all ease-in;
+}
+
+.index-images-3 {
+  opacity: 1;
+  transition: .25s all ease-in;
+}
+
+.index-images-4 {
+  opacity: 1;
+  transition: 1s all ease-in;
+}
+
+.index-images-5 {
+  opacity: 1;
+  transition: .25s all ease-in;
 }
 
 .nav-container {
@@ -21,6 +69,7 @@ a:hover {
   font-size:14px;
   color:#282828;
   font-weight:300;
+  letter-spacing: 1px;
 }
 
 .nav-container ul li {
@@ -33,11 +82,30 @@ a:hover {
   font-size:30px;
   text-decoration: none;
   color:#524956;
-  border-bottom:3px #524956 dotted;
+  line-height: 20px;
+  position: relative;
+}
+
+.logo-bracket-left {
+  position: absolute;
+  font-size:50px;
+  top:20px;
+  margin-left:-60px;
+}
+
+.logo-bracket-right {
+  position: absolute;
+  font-size:50px;
+  top:20px;
+  margin-left:16px;
 }
 
 .main-container {
   width:100%;
+}
+
+.main-bg {
+  background: #fff9f3;
 }
 
 img {
@@ -58,15 +126,33 @@ img {
 
 .index-images {
   position: relative;
+  overflow: hidden;
 }
 
 .caption {
-  padding:30px;
-  background:rgba(255, 255, 255, 0.7);
+  padding:20px 35px 30px 20px;
+  background:rgba(255, 255, 255, 0.8);
   position: absolute;
-  bottom:0;
-  width:100%;
+  bottom:-50%;
+  left:15px;
+  right:15px;
   color:#153f7c;
+  z-index:9999;
+  line-height: 20px;
+  margin:0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.index-images-link:hover + .caption {
+  position: absolute;
+  bottom:15px;
+  transition: .25s all ease-in;
+}
+
+.caption:hover {
+  position: absolute;
+  bottom:15px;
 }
 
 .about-container {
@@ -83,8 +169,73 @@ img {
   padding:50px;
 }
 
+.about-story-container {
+  position: relative;
+  background-image: url(../images/about_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height:600px;
+  background-position: center bottom;
+}
+
+.about-story-white {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.about-story {
+  padding-top:100px;
+  padding-bottom:100px;
+  background: rgba(255, 255, 255, .8);
+  border-radius:8px;
+  margin-top: 10%;
+}
+
+.about-story, .sweets {
+  font-family: 'Droid Serif', serif;
+  font-size:50px;
+}
+
+.sweets {
+  border-bottom: 2px solid #aaaaaa;
+}
+
+.catering-white {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.catering-story-container {
+  background-image:url(../images/bg_2.jpg);
+  background-position: center center;
+  background-size: auto;
+  background-attachment: fixed;
+  padding-top:70px;
+  padding-bottom:70px;
+}
+
+.catering-story-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding:100px;
+}
+
+.catering-story-section img {
+  max-width:500px;
+  margin:10px auto 20px;
+  border-radius:8px;
+}
+
 footer {
   padding-top:30px;
+  padding-bottom:30px;
 }
 
 .social i {
