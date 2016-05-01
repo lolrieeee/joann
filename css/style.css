@@ -307,6 +307,16 @@ footer {
   .contact-content {
     padding:20px;
   }
+
+  .catering-story-container > .row {
+    margin-right:0;
+    margin-left:0;
+  }
+
+  .about-container > .row {
+    margin-right:0;
+    margin-left:0;
+  }
 }
 
 @media only screen and (min-width: 769px) {
