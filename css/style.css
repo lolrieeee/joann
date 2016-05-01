@@ -236,7 +236,6 @@ img {
 }
 
 .catering-story-section img {
-  max-width:500px;
   margin:10px auto 20px;
   border-radius:8px;
 }
@@ -297,10 +296,6 @@ footer {
     display:none;
   }
 
-  .catering-story-section img {
-    max-width:325px;
-  }
-
   .catering-story-section {
     padding:20px;
   }
@@ -311,5 +306,11 @@ footer {
 
   .contact-content {
     padding:20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .catering-story-section img {
+    max-width:500px;
   }
 }
