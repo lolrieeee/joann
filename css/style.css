@@ -317,6 +317,11 @@ footer {
     margin-right:0;
     margin-left:0;
   }
+
+  .contact-container > .row {
+    margin-right:0;
+    margin-left:0;
+  }
 }
 
 @media only screen and (min-width: 769px) {
